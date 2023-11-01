@@ -116,3 +116,41 @@ export const chatData=[
     ]
   }
 ]
+
+export const exampleMessage=(userId,state)=> {
+  return {
+  chatId:'653a2557c55c6c862e6431be',
+  userId: userId,
+  receiverId:parseInt(state.id),
+  messageId: 'newmessage456',
+  isRead: true,
+  text: state.text,
+  media: ['mediaUrl1', 'mediaUrl2'],
+  reaction: 'thumbsUp',
+  parentMessage: {},
+}
+}
+
+export const exampleReactionOnMessage=(userId,state)=> {
+ return {
+  id:'653a00cbe4a62958a1b5bcfb',
+  chatId:'653a2557c55c6c862e6431be',
+  userId: userId,
+  receiverId:parseInt(state.id),
+  messageId: 'newmessage456',
+  isRead: true,
+  text: state.text,
+  media: ['mediaUrl1', 'mediaUrl2'],
+  reaction: 'butterfly',
+  parentMessage: {},
+}}
+
+export const exampleChat = {
+  ownerId: '652e500512592fa5bd355285',
+  isDeleted: ['652e500512592fa5bd355285', '652e516f12592fa5bd35528b'],
+  isArchived: ['652e500512592fa5bd355285'],
+  markAsUnread: ['652e500512592fa5bd355285'],
+  mute: ['652e500512592fa5bd355285'],
+  pinned: ['652e500512592fa5bd355285'],
+  participants: ['652e500512592fa5bd355285', '652e516f12592fa5bd35528b'],
+};
