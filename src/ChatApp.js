@@ -7,6 +7,7 @@ const ChatApp = ({ chatData }) => {
     // Add more users and corresponding classes here
   };
 
+  // add comments for testing
   const [selectedChat, setSelectedChat] = useState(null);
 
   const handleChatClick = (chatId) => {
